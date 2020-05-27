@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf_ui_display_medium.ttf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserInfoAlertView" customModule="SmartHomeForIpad" customModuleProvider="target">
+            <connections>
+                <outlet property="alertView" destination="EgO-Kd-5Ej" id="bDr-88-iyn"/>
+                <outlet property="doneButton" destination="a2Q-nb-V9T" id="1uM-jC-hw0"/>
+                <outlet property="parentView" destination="iN0-l3-epB" id="jJ1-Ln-2Lq"/>
+                <outlet property="userAddressLabel" destination="gIC-xb-ofD" id="8iT-yh-Q3Z"/>
+                <outlet property="userApartmentIdLabel" destination="MVa-CN-LIx" id="0x1-gG-37D"/>
+                <outlet property="userAvatarLabel" destination="vcN-ae-WLL" id="LR1-PM-h1k"/>
+                <outlet property="userDescriptionLabel" destination="4ot-nH-F3l" id="Xgs-g9-YBG"/>
+                <outlet property="userIdLabel" destination="8nh-Hn-li7" id="nyk-iP-Ezd"/>
+                <outlet property="userNameLabel" destination="7Pf-9B-IHA" id="1WF-Na-I4g"/>
+                <outlet property="userPhoneLabel" destination="Chx-ZS-osS" id="4vh-wi-5yj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4z-bL-w5H">
+                    <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgO-Kd-5Ej" userLabel="Alert View">
+                            <rect key="frame" x="119.5" y="208.5" width="955" height="417"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="c5O-9u-rUC">
+                                    <rect key="frame" x="100" y="118.5" width="439.5" height="180"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1aQ-Iv-crn" userLabel="Stack View Icon">
+                                            <rect key="frame" x="0.0" y="22.5" width="115.5" height="135.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vcN-ae-WLL">
+                                                    <rect key="frame" x="7.5" y="0.5" width="100" height="99"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="TgE-dS-GJc"/>
+                                                        <constraint firstAttribute="width" constant="100" id="umR-0w-naY"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dinh Bao Manh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pf-9B-IHA">
+                                                    <rect key="frame" x="0.0" y="115" width="115.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SmP-3B-LxB" userLabel="Stack View Data">
+                                            <rect key="frame" x="215.5" y="0.0" width="224" height="180"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3li-Ja-bdF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="102" height="180"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyc-Td-mX8">
+                                                            <rect key="frame" x="0.0" y="0.0" width="19" height="24"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                                                            <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZw-qt-Vyk">
+                                                            <rect key="frame" x="0.0" y="39" width="94.5" height="24"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                                                            <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1f-uk-2rb">
+                                                            <rect key="frame" x="0.0" y="78" width="73.5" height="24"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                                                            <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="on2-8W-SV5">
+                                                            <rect key="frame" x="0.0" y="117" width="102" height="24"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                                                            <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6e4-Nu-oh1">
+                                                            <rect key="frame" x="0.0" y="156" width="57.5" height="24"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                                                            <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yPN-bd-eJ8">
+                                                    <rect key="frame" x="122" y="0.0" width="102" height="180"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nh-Hn-li7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="19" height="24"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVa-CN-LIx">
+                                                            <rect key="frame" x="0.0" y="39" width="94.5" height="24"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIC-xb-ofD">
+                                                            <rect key="frame" x="0.0" y="78" width="73.5" height="24"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ot-nH-F3l">
+                                                            <rect key="frame" x="0.0" y="117" width="102" height="24"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chx-ZS-osS">
+                                                            <rect key="frame" x="0.0" y="156" width="57.5" height="24"/>
+                                                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2Q-nb-V9T">
+                                    <rect key="frame" x="868" y="361" width="47" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <state key="normal" title="Done"/>
+                                    <connections>
+                                        <action selector="closeAlert:" destination="-1" eventType="touchUpInside" id="57X-Pj-VyG"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="c5O-9u-rUC" firstAttribute="leading" secondItem="EgO-Kd-5Ej" secondAttribute="leading" constant="100" id="hr0-6i-fcG"/>
+                                <constraint firstAttribute="trailing" secondItem="a2Q-nb-V9T" secondAttribute="trailing" constant="40" id="jyV-Qz-InK"/>
+                                <constraint firstAttribute="bottom" secondItem="a2Q-nb-V9T" secondAttribute="bottom" constant="20" id="t3v-41-kpT"/>
+                                <constraint firstItem="c5O-9u-rUC" firstAttribute="centerY" secondItem="EgO-Kd-5Ej" secondAttribute="centerY" id="uZF-jN-i0S"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="EgO-Kd-5Ej" firstAttribute="centerX" secondItem="C4z-bL-w5H" secondAttribute="centerX" id="P3X-nX-dIp"/>
+                        <constraint firstItem="EgO-Kd-5Ej" firstAttribute="width" secondItem="C4z-bL-w5H" secondAttribute="width" multiplier="0.8" id="WY2-IA-WbD"/>
+                        <constraint firstItem="EgO-Kd-5Ej" firstAttribute="height" secondItem="C4z-bL-w5H" secondAttribute="height" multiplier="0.5" id="oEk-kx-t5x"/>
+                        <constraint firstItem="EgO-Kd-5Ej" firstAttribute="centerY" secondItem="C4z-bL-w5H" secondAttribute="centerY" id="wgk-OV-R8T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstItem="C4z-bL-w5H" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="DMP-Zh-TN5"/>
+                <constraint firstItem="C4z-bL-w5H" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="gIC-wn-WJ2"/>
+                <constraint firstItem="C4z-bL-w5H" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oi8-rt-YSa"/>
+                <constraint firstItem="C4z-bL-w5H" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rIe-Ub-ILo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.65829145728642" y="134.53237410071944"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

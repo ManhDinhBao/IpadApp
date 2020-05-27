@@ -1,0 +1,22 @@
+PODS:
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - ReachabilitySwift (5.0.0)
+
+DEPENDENCIES:
+  - Charts
+  - ReachabilitySwift
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+
+PODFILE CHECKSUM: 6468802fa8d4ad638e05303badf4aad4b70e5e09
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf_ui_display_regular.ttf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WaitingAlertView" customModule="SmartHomeForIpad" customModuleProvider="target">
+            <connections>
+                <outlet property="alertView" destination="FPx-26-uE1" id="hL3-Mx-cbJ"/>
+                <outlet property="blurBackground" destination="Fl2-YD-aoy" id="iQJ-dC-FGS"/>
+                <outlet property="parentView" destination="iN0-l3-epB" id="Fb5-gK-gw1"/>
+                <outlet property="statusLabel" destination="f0z-n2-cqM" id="E2H-6W-sLZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fl2-YD-aoy">
+                    <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPx-26-uE1">
+                    <rect key="frame" x="522" y="332" width="150" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Đang đăng nhập..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0z-n2-cqM">
+                            <rect key="frame" x="19" y="110" width="113" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="DZb-jy-EyC"/>
+                        <constraint firstAttribute="width" constant="150" id="hSn-OQ-aXy"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="DeO-yp-RSG">
+                    <rect key="frame" x="578.5" y="388.5" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="DeO-yp-RSG" firstAttribute="centerX" secondItem="FPx-26-uE1" secondAttribute="centerX" id="66b-LV-rNe"/>
+                <constraint firstItem="Fl2-YD-aoy" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" id="CJy-uS-3j9"/>
+                <constraint firstItem="FPx-26-uE1" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Flc-ev-UIv"/>
+                <constraint firstItem="Fl2-YD-aoy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Flw-GR-Kxs"/>
+                <constraint firstItem="DeO-yp-RSG" firstAttribute="centerY" secondItem="FPx-26-uE1" secondAttribute="centerY" id="Mhj-yC-UQZ"/>
+                <constraint firstItem="FPx-26-uE1" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="S1r-XZ-Ku5"/>
+                <constraint firstItem="Fl2-YD-aoy" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="eJY-Tq-veK"/>
+                <constraint firstItem="Fl2-YD-aoy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sWb-W6-Tqt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.65829145728642" y="134.53237410071944"/>
+        </view>
+    </objects>
+</document>
